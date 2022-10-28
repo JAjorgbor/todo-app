@@ -1,0 +1,72 @@
+body {
+  background-color: hsl(236deg, 33%, 92%);
+}
+
+header {
+  background-image: url("../images/bg-mobile-light.jpg");
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    background-image: url("../images/bg-desktop-light.jpg");
+  }
+}
+input[type=text] {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(235deg, 19%, 35%);
+}
+
+.lists-container {
+  box-shadow: 0px 1px 20px gray;
+}
+
+ul {
+  background-color: hsl(236deg, 33%, 92%);
+}
+
+li {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(235deg, 19%, 35%);
+  border-bottom: 1px solid hsl(233deg, 11%, 84%);
+}
+
+.close-btn {
+  color: hsl(235deg, 19%, 35%);
+}
+
+.li-crossed {
+  text-decoration: line-through;
+  color: hsl(234deg, 11%, 52%);
+}
+
+.message {
+  color: #1b1a0e;
+}
+
+.task-details {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(234deg, 11%, 52%);
+}
+
+.check-circle {
+  border: 0.1px solid hsl(234deg, 11%, 52%);
+}
+
+.check-btn {
+  border: 0.1px solid hsl(234deg, 11%, 52%);
+  color: hsl(100deg, 100%, 100%);
+}
+
+.choices {
+  box-shadow: 0px 1px 20px gray;
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(234deg, 11%, 52%);
+}
+
+.active-choice {
+  color: hsl(220deg, 98%, 61%);
+}
+
+.drag-instruction {
+  color: hsl(234deg, 11%, 52%);
+}/*# sourceMappingURL=lightTheme.css.map */

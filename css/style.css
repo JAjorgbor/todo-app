@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  transition: background-color 1s, color 1s;
+  transition-timing-function: ease-in-out;
+}
+
+header {
+  padding: 2rem 1rem 7rem 1rem;
+  background-size: cover;
+  color: hsl(100deg, 100%, 100%);
+}
+header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.theme-logo-container {
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  width: 2.5rem;
+  height: 2.7rem;
+  overflow: hidden;
+}
+.theme-logo-container .dark-theme, .theme-logo-container .light-theme {
+  position: absolute;
+}
+.theme-logo-container .dark-theme {
+  transform: translateY(50px);
+  font-size: 0.5rem;
+  transition-timing-function: ease-in-out;
+  transition: all 1s;
+}
+.theme-logo-container .light-theme {
+  font-size: 1.5rem;
+  right: 25%;
+  bottom: 10%;
+  transition-timing-function: ease-in-out;
+  transition: all 1s;
+}
+
+.theme-logo-container-clicked .dark-theme {
+  transform: translateY(0);
+  font-size: 2rem;
+  left: 10%;
+}
+.theme-logo-container-clicked .light-theme {
+  right: 18%;
+  bottom: 30%;
+  transform: rotate(-180deg);
+  font-size: 0.8rem;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: -7rem;
+  overflow: hidden;
+  padding-bottom: 25%;
+}
+
+form {
+  position: relative;
+}
+form .check-circle {
+  border-radius: 50%;
+  background: none;
+  position: relative;
+  bottom: -35.5px;
+  left: 1rem;
+  padding: 0.25rem 0.7rem;
+}
+form button {
+  position: absolute;
+  top: -100px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-indent: 2rem;
+}
+
+.lists-container {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s;
+}
+
+ul {
+  width: 100%;
+  border-radius: 5px;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+ul .message {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  text-transform: uppercase;
+  margin: auto;
+}
+ul li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+ul li {
+  cursor: move;
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: left 1s;
+  position: relative;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes slide-in {
+  from {
+    left: -100%;
+    opacity: 0;
+    transform: scale(1, 0);
+  }
+  to {
+    opacity: 1;
+    left: 0%;
+    transform: scale(1);
+  }
+}
+@keyframes slide-in {
+  from {
+    left: -100%;
+    opacity: 0;
+    transform: scale(1, 0);
+  }
+  to {
+    opacity: 1;
+    left: 0%;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes slide-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    left: 0;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1, 0);
+    left: -100%;
+  }
+}
+@keyframes slide-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    left: 0;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1, 0);
+    left: -100%;
+  }
+}
+
+.task-details {
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 1rem;
+  position: relative;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.task-details a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.items-no-container {
+  position: relative;
+  min-width: 5rem;
+}
+.items-no-container div {
+  transition: opacity 1s;
+  opacity: 0;
+}
+.items-no-container div:not(:nth-of-type(1)) {
+  position: absolute;
+  left: 0%;
+  top: 0;
+}
+
+.check-btn {
+  padding: 0.65rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 0.9rem;
+  background: none;
+  cursor: pointer;
+  font-size: 0;
+  transition: background-image 1s, font-size 0.5s;
+}
+
+.check-btn-checked {
+  background-image: linear-gradient(hsl(220deg, 98%, 61%), hsl(280deg, 87%, 65%));
+  padding: 0.05rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.choices {
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: -4rem;
+  left: 0rem;
+  padding: 1rem 10%;
+}
+.choices span {
+  cursor: pointer;
+}
+
+.clear-completed:hover {
+  font-weight: 700;
+}
+
+.drag-instruction {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 1.5rem;
+  flex: end;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 600px) {
+  header .container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 800px) {
+  header .container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  header .container {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 700px) {
+  main {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  main {
+    width: 45%;
+  }
+}
+@media screen and (max-height: 950px) {
+  main {
+    padding-bottom: 30%;
+  }
+}
+@media screen and (max-height: 800px) {
+  main {
+    padding-bottom: 35%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .choices {
+    position: initial;
+    width: 40%;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+@media screen and (min-width: 920px) {
+  .choices {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .drag-instruction {
+    position: initial;
+    margin-top: 2.5rem;
+    text-align: center;
+    bottom: 0;
+    left: initial;
+    transform: translate(0);
+  }
+}/*# sourceMappingURL=style.css.map */

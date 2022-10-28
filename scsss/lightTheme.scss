@@ -1,0 +1,72 @@
+@use "mixins" as *;
+@use "variables" as *;
+body{
+    background-color:$veryLightGrayishBlue;
+}
+header{
+    background-image: url("../images/bg-mobile-light.jpg");
+}
+@media screen and(min-width:600px){
+    header{
+        background-image: url("../images/bg-desktop-light.jpg");
+    }
+}
+input[type=text]{
+    background:$lightGray;
+    color:$veryDarkGrayishBlue;
+
+}
+.lists-container{
+    box-shadow:0px 1px 20px gray;
+
+}
+ul{
+    background-color:$veryLightGrayishBlue;
+}
+li{
+    background:$lightGray;
+    color:$veryDarkGrayishBlue;
+    border-bottom:1px solid $lightGrayishBlue;
+}
+.close-btn{
+    color:$veryDarkGrayishBlue;
+
+}
+.li-crossed{
+    text-decoration: line-through;
+    color:$darkGrayishBlue;
+
+}
+.message{
+    color:invert($veryLightGrayishBlue);
+
+}
+.task-details{
+    background:$lightGray;
+
+    color:$darkGrayishBlue;  
+
+}
+.check-circle{
+    border:0.1px solid $darkGrayishBlue;
+
+}
+.check-btn{
+    border:0.1px solid $darkGrayishBlue;
+    color:$white;
+
+}
+.choices{
+    box-shadow:0px 1px 20px gray;
+    background:$lightGray;
+    color:$darkGrayishBlue ;
+    
+}
+.active-choice{
+    color:$brightBlue;
+
+}
+.drag-instruction{
+    color:$darkGrayishBlue;
+
+}
