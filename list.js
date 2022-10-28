@@ -254,8 +254,8 @@ const ui=new Ui()
                 e.target.insertAdjacentElement("beforebegin",selectedItem)
                 
             }
-            else{
-                console.log("selected item is null");
+            else if(selectedItem==null){
+
                 return;
             }
 

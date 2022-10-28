@@ -53,6 +53,8 @@ window.onload=()=>{
     list.retrieveFromLocalStorage()
    uls.forEach((ul)=>{
        ul.querySelectorAll("li").forEach((li)=>{
+
+    li.ondragstart=list.dragging;           
     li.ondrag=list.dragging;           
 })    
 // ul.ondragover=list.dragOver;
