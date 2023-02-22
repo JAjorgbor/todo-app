@@ -32,7 +32,8 @@ header h1 {
   height: 2.7rem;
   overflow: hidden;
 }
-.theme-logo-container .dark-theme, .theme-logo-container .light-theme {
+.theme-logo-container .dark-theme,
+.theme-logo-container .light-theme {
   position: absolute;
 }
 .theme-logo-container .dark-theme {
@@ -129,24 +130,9 @@ ul li {
   align-items: center;
   transition: left 1s;
   position: relative;
-  -webkit-animation-name: slide-in;
-          animation-name: slide-in;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes slide-in {
-  from {
-    left: -100%;
-    opacity: 0;
-    transform: scale(1, 0);
-  }
-  to {
-    opacity: 1;
-    left: 0%;
-    transform: scale(1);
-  }
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 @keyframes slide-in {
   from {
@@ -158,18 +144,6 @@ ul li {
     opacity: 1;
     left: 0%;
     transform: scale(1);
-  }
-}
-@-webkit-keyframes slide-out {
-  from {
-    opacity: 1;
-    transform: scale(1);
-    left: 0;
-  }
-  to {
-    opacity: 0;
-    transform: scale(1, 0);
-    left: -100%;
   }
 }
 @keyframes slide-out {
@@ -271,6 +245,77 @@ ul li {
 
 .dragging {
   opacity: 0.5;
+}
+
+.attribution-container {
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+.profile-pic-container {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+.profile-pic-container img {
+  height: 65px;
+  width: 100%;
+  border-radius: 10%;
+  position: relative;
+  top: -30%;
+}
+
+.attribution {
+  font-size: 1em;
+  position: absolute;
+  height: 100px;
+  background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
+  background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
+  border-radius: 10px;
+  padding: 1em;
+  top: -200%;
+  left: -450%;
+  line-height: 1.5em;
+  color: hsl(0deg, 0%, 98%);
+  transition: all 0.5s ease-in-out;
+  transform: scale(0, 0);
+  transform-origin: bottom right;
+}
+.attribution .icons {
+  text-align: center;
+  margin-top: 0.8rem;
+  -webkit-margin-before: 0.8rem;
+          margin-block-start: 0.8rem;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+}
+.attribution a {
+  color: hsl(220deg, 98%, 61%);
+  text-decoration: none;
+}
+
+.attribution:hover {
+  background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
+  background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
+}
+
+.attribution-container:hover {
+  box-shadow: 0 10px 50px #ec8225;
+  -webkit-box-shadow: 0 10px 50px #ec8225;
+  -moz-box-shadow: 0 10px 50px #ec8225;
+}
+.attribution-container:hover .profile-pic-container {
+  opacity: 0.9;
+}
+.attribution-container:hover .attribution {
+  top: -230%;
+  transform: scale(1);
 }
 
 @media screen and (min-width: 600px) {
