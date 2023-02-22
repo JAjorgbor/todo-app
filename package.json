@@ -1,0 +1,19 @@
+{
+  "name": "todo-app-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-scss": "sass --watch scss/style.scss:css/style.css scss/darkTheme.scss:css/darkTheme.css scss/lightTheme.scss:css/lightTheme.css | postcss --use autoprefixer --output style.css darkTheme.css lightTheme.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.58.3"
+  }
+}
