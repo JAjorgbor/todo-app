@@ -31,6 +31,7 @@ header h1 {
   width: 2.5rem;
   height: 2.7rem;
   overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 .theme-logo-container .dark-theme,
 .theme-logo-container .light-theme {
