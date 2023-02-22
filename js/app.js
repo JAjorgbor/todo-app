@@ -22,12 +22,12 @@ themes.onclick = () => {
     themes.classList.toggle("theme-logo-container-clicked");
 
     if (clicked) {
-        document.querySelector(".themeStyleSheet").href = "/css/lightTheme.css";
+        document.querySelector(".themeStyleSheet").href = "css/lightTheme.css";
         clicked = false;
         localStorage.setItem("theme", "light")
     }
     else {
-        document.querySelector(".themeStyleSheet").href = "/css/darkTheme.css";
+        document.querySelector(".themeStyleSheet").href = "css/darkTheme.css";
         clicked = true;
         localStorage.setItem("theme", "dark")
 
