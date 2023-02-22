@@ -44,7 +44,7 @@ window.onload = () => {
         localStorage.setItem("All Tasks", JSON.stringify(generalTasks))
 
         localStorage.setItem("Completed Tasks", JSON.stringify(completedTasks))
-        document.querySelector(".themeStyleSheet").href = "/css/darkTheme.css";
+        document.querySelector(".themeStyleSheet").href = "css/darkTheme.css";
         localStorage.setItem("theme", "dark")
 
         localStorage.setItem("loaded for the first time", "true")
@@ -72,12 +72,12 @@ window.onload = () => {
         }
     })
     if (localStorage.getItem("theme") == "light") {
-        document.querySelector(".themeStyleSheet").href = "/css/lightTheme.css";
+        document.querySelector(".themeStyleSheet").href = "css/lightTheme.css";
         themes.classList.add("theme-logo-container-clicked")
         clicked = false;
     }
     else if (localStorage.getItem("theme") == "dark") {
-        document.querySelector(".themeStyleSheet").href = "/css/darkTheme.css";
+        document.querySelector(".themeStyleSheet").href = "css/darkTheme.css";
         themes.classList.remove("theme-logo-container-clicked")
         clicked = true;
 

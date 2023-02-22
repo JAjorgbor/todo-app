@@ -11,7 +11,7 @@
 header {
   padding: 2rem 1rem 7rem 1rem;
   background-size: cover;
-  color: hsl(100deg, 100%, 100%);
+  color: hsl(100, 100%, 100%);
 }
 header .container {
   width: 90%;
@@ -73,28 +73,43 @@ main {
 
 form {
   position: relative;
+  display: flex;
+  padding: 0;
 }
 form .check-circle {
   border-radius: 50%;
   background: none;
-  position: relative;
+  position: absolute;
+  height: 25px;
+  width: 25px;
   bottom: -35.5px;
   left: 1rem;
-  padding: 0.25rem 0.7rem;
+  top: 0.9rem;
 }
 form button {
-  position: absolute;
-  top: -100px;
+  width: 10%;
+  margin-bottom: 1rem;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 98%);
+  background-image: linear-gradient(hsl(220, 98%, 61%), hsl(280, 87%, 65%));
+}
+form button:active {
+  opacity: 0.8;
 }
 
 input[type=text] {
-  width: 100%;
+  width: 90%;
   padding: 1.2rem;
   margin-bottom: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   outline: none;
   text-indent: 2rem;
+  justify-self: start;
 }
 
 .lists-container {
@@ -200,7 +215,7 @@ ul li {
 }
 
 .check-btn-checked {
-  background-image: linear-gradient(hsl(220deg, 98%, 61%), hsl(280deg, 87%, 65%));
+  background-image: linear-gradient(hsl(220, 98%, 61%), hsl(280, 87%, 65%));
   padding: 0.05rem;
   padding-top: 0.25rem;
   padding-bottom: 0;
@@ -276,13 +291,19 @@ ul li {
   position: absolute;
   height: 100px;
   background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
+  background-image: -moz-linear-gradient(-45deg, #2e1ba6, #761d75);
+  background-image: -ms-linear-gradient(-45deg, #2e1ba6, #761d75);
   background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
   border-radius: 10px;
   padding: 1em;
   top: -200%;
   left: -450%;
   line-height: 1.5em;
-  color: hsl(0deg, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   transform: scale(0, 0);
   transform-origin: bottom right;
@@ -290,18 +311,27 @@ ul li {
 .attribution .icons {
   text-align: center;
   margin-top: 0.8rem;
-  -webkit-margin-before: 0.8rem;
-          margin-block-start: 0.8rem;
+  margin-block-start: 0.8rem;
   font-size: 1.2em;
   letter-spacing: 0.2em;
 }
 .attribution a {
-  color: hsl(220deg, 98%, 61%);
+  color: hsl(220, 98%, 61%);
   text-decoration: none;
+}
+.attribution a:hover {
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+  color: hsl(235, 24%, 19%);
 }
 
 .attribution:hover {
   background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
+  background-image: -moz-linear-gradient(-45deg, #2e1ba6, #761d75);
+  background-image: -ms-linear-gradient(-45deg, #2e1ba6, #761d75);
   background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
 }
 
@@ -383,4 +413,6 @@ ul li {
     left: initial;
     transform: translate(0);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
