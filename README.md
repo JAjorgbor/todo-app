@@ -51,7 +51,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-  -Vanila javascript
+- Vanila javascript
 
 ### What I learned
 
