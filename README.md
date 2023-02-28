@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [View solution here](https://your-solution-url.com)
+- Solution URL: [View solution here](https://www.frontendmentor.io/solutions/reorderable-todo-app-made-with-html-scss-and-vanilla-javascript-u5JTlTiMGX)
 - Live Site URL: [View live site here](https://jajorgbor.github.io/todo-app/)
 
 ## My process
