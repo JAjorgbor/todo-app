@@ -59,3 +59,12 @@ li {
 .drag-instruction {
   color: $darkGrayishBlue;
 }
+.attribution{
+  background-image: linear-gradient(-45deg,#6EA2F8, #B35FEB);
+  background-image: -moz-linear-gradient(-45deg,#6EA2F8, #B35FEB );
+  background-image: -ms-linear-gradient(-45deg,#6EA2F8, #B35FEB );
+  background-image: -o-linear-gradient(-45deg,#6EA2F8, #B35FEB );
+  a{
+    color:#9a0ad3;
+  }
+}

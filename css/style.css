@@ -88,7 +88,7 @@ form .check-circle {
   top: 0.9rem;
 }
 form button {
-  width: 10%;
+  padding: 0 1rem;
   margin-bottom: 1rem;
   border-radius: 0 5px 5px 0;
   border: none;
@@ -291,10 +291,6 @@ ul li {
   font-size: 1em;
   position: absolute;
   height: 100px;
-  background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -moz-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -ms-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
   border-radius: 10px;
   padding: 1em;
   top: -200%;
@@ -317,23 +313,16 @@ ul li {
   letter-spacing: 0.2em;
 }
 .attribution a {
-  color: hsl(220, 98%, 61%);
   text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 .attribution a:hover {
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
   color: hsl(235, 24%, 19%);
-}
-
-.attribution:hover {
-  background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -moz-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -ms-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
 }
 
 .attribution-container:hover {
@@ -414,6 +403,4 @@ ul li {
     left: initial;
     transform: translate(0);
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

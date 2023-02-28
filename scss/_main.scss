@@ -8,12 +8,8 @@
   transition: background-color 1s, color 1s;
   transition-timing-function: ease-in-out;
 }
-// body{
-//     background-color:$veryDarkBlue;
-// }
 header {
   padding: 2rem 1rem 7rem 1rem;
-  // background-image: url("../images/bg-desktop-dark.jpg");
   background-size: cover;
   color: $white;
   .container {
@@ -91,7 +87,7 @@ form {
     top:0.9rem;
   }
   button {
-    width: 10%;
+    padding:0 1rem;
     margin-bottom: 1rem;
     border-radius: 0 5px 5px 0;
     border: none;
@@ -312,10 +308,10 @@ ul {
   font-size: 1em;
   position: absolute;
   height: 100px;
-  background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -moz-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -ms-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
+  // background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
+  // background-image: -moz-linear-gradient(-45deg, #2e1ba6, #761d75);
+  // background-image: -ms-linear-gradient(-45deg, #2e1ba6, #761d75);
+  // background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
   border-radius: 10px;
   padding: 1em;
   top: -200%;
@@ -339,24 +335,17 @@ ul {
   }
 
   a {
-    color: $brightBlue;
     text-decoration: none;
+    font-weight: 700;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
   a:hover {
-    -webkit-transition: color 0.5s ease-in-out;
-    -moz-transition: color 0.5s ease-in-out;
-    -ms-transition: color 0.5s ease-in-out;
-    -o-transition: color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
     color: $darkDesaturatedBlue;
   }
-}
-
-.attribution:hover {
-  background-image: linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -moz-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -ms-linear-gradient(-45deg, #2e1ba6, #761d75);
-  background-image: -o-linear-gradient(-45deg, #2e1ba6, #761d75);
 }
 .attribution-container:hover {
   box-shadow: 0 10px 50px #ec8225;
